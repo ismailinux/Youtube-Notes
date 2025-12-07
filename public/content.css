@@ -1,0 +1,42 @@
+/* Styles for the injected bookmark button */
+#yt-bookmarker-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  height: 36px;
+  border-radius: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+#yt-bookmarker-btn button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#yt-bookmarker-btn button .yt-spec-button-shape-next__button-text-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#yt-bookmarker-btn button svg {
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Dark mode support */
+html[dark] #yt-bookmarker-btn button,
+[dark] #yt-bookmarker-btn button {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+html[dark] #yt-bookmarker-btn button:hover,
+[dark] #yt-bookmarker-btn button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
